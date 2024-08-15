@@ -12,9 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.4",
     "chai": "^5.1.1",
+    "chance": "^1.1.12",
     "mocha": "10.7.3",
-    "selenium-webdriver": "^4.23.0",
-    "axios": "^1.7.4"
+    "selenium-webdriver": "^4.23.0"
   }
 }
