@@ -1,5 +1,6 @@
 import { Builder, By, WebDriver } from 'selenium-webdriver';
 import { before, after, it } from 'mocha';
+import { loginUser } from '../../../api/apiCommands.mjs';
 
 let driver;
 
@@ -21,7 +22,18 @@ it('example test', async () => {
     let value = await message.getText();
     
     console.log('Message: ', value);
+
 });
+
+
+
+it('Validate Axios Implementation', async () => {
+    loginUser("testTester@testing.com", "password").then(resp => {
+        console.log("Here's the expected login Response -->", resp.data);
+    });
+
+});
+
 
 after('Clean up', async () => {
     if (driver) {
