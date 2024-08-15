@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "npx mocha --recursive ./**/**/*.spec.mjs"
+    "test": "npx mocha --recursive ./**/**/*.spec.mjs",
+    "test:login": "npx mocha ./**/**/*.spec.mjs"
   },
   "keywords": [],
   "author": "",
