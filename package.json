@@ -5,13 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "npx mocha --recursive ./**/**/*.spec.mjs",
-    "test:login": "npx mocha ./**/**/*.spec.mjs"
+    "test": "npx mocha --recursive ./**/**/*.spec.mjs --parallel",
+    "test:signUp": "npx mocha ./**/**/signUp.spec.mjs"
   },
   "keywords": [],
-  "author": "",
+  "author": "Antonio Bellifemine",
   "license": "ISC",
   "dependencies": {
+    "@dotenvx/dotenvx": "^1.7.0",
     "axios": "^1.7.4",
     "chai": "^5.1.1",
     "chance": "^1.1.12",
