@@ -2,7 +2,7 @@ import { Builder, By, until, WebDriver } from 'selenium-webdriver';
 import { beforeEach, afterEach, it } from 'mocha';
 import 'dotenv/config';
 import { expect } from 'chai';
-import { fillInRegistrationForm } from '../../../comands/sharedCommands.mjs';
+import { fillInRegistrationForm } from '../../../domainSpecificLanguage/sharedCommands.mjs';
 
 let driver;
 
